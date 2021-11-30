@@ -24,4 +24,4 @@ spec:
         filter: header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-Rik-IBM-MQ' && body.repository.full_name == 'Rik-IBM-MQ/mq-spring-app'
     name: mq-spring-app-dev
     template:
-      name: mq-spring-app-dev
+      ref: mq-spring-app-dev
