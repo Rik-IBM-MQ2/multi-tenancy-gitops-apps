@@ -5,3 +5,6 @@ mq-spring-app:
     replicaCount: 2
     configmap:
       CONNECTION_NAME: qm-dev-ibm-mq.staging.svc.cluster.local(1414)
+  replicaCount: 2
+  configmap:
+    CONNECTION_NAME: qm-dev-ibm-mq.staging.svc.cluster.local(1414)
