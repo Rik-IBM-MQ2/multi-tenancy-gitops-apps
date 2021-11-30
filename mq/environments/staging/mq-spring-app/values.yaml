@@ -1,10 +1,5 @@
 global: {}
 mq-spring-app:
-
-  mq-spring-app:
-    replicaCount: 1
-    configmap:
-      CONNECTION_NAME: qm-dev-ibm-mq.staging1.svc.cluster.local(1414)
-  replicaCount: 3
+  replicaCount: 2
   configmap:
-    CONNECTION_NAME: qm-dev-ibm-mq.staging2.svc.cluster.local(1414)
+    CONNECTION_NAME: qm-dev-ibm-mq.staging.svc.cluster.local(1414)
