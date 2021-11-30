@@ -1,3 +1,6 @@
 global: {}
 mq-spring-app:
   replicaCount: 1
+
+configmap:
+  CONNECTION_NAME: qm-dev-ibm-mq.staging.svc.cluster.local(1414)
