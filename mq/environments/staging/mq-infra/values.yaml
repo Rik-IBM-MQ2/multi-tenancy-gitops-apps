@@ -1,3 +1,19 @@
 global: {}
 mq-infra:
   replicaCount: 1
+post-sync-job:
+  name: mq-infra-stage-to-prod-postsync-trigger
+  argocdhook: PostSync
+  serviceaccount: pipeline
+  container:
+    image: registry.access.redhat.com/ubi8
+    imagePullPolicy: Always
+    command: "curl"
+    args:
+      - "-X"
+      - "POST"
+      - "-H"
+      - "Content-Type: application/json"
+      - "--data"
+      - "{}"
+      - "http://mq-infra-post-stage-ci.itzroks-661002q71v-xu4r9r-6ccd7f378ae819553d37d5f2ee142bd6-0000.sjc04.containers.appdomain.cloud"
