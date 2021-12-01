@@ -41,3 +41,5 @@ resources:
 - triggertemplates/mq-infra-stage-triggertemplate.yaml
 - eventlisteners/mq-infra-stage-eventlistener.yaml
 - routes/mq-infra-stage-route.yaml
+- routes/mq-spring-app-dev-route.yaml
+- routes/mq-spring-app-stage-route.yaml
