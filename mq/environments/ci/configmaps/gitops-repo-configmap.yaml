@@ -9,9 +9,9 @@ metadata:
 data:
   branch: master
   host: github.com
-  org: Rik-IBM-MQ
-  owner: Rik-IBM-MQ
+  org: Rik-IBM-MQ2
+  owner: Rik-IBM-MQ2
   parentdir: .
   protocol: https
   repo: multi-tenancy-gitops-apps
-  url: https://github.com/Rik-IBM-MQ/multi-tenancy-gitops-apps.git
+  url: https://github.com/Rik-IBM-MQ2/multi-tenancy-gitops-apps.git

@@ -18,6 +18,6 @@ spec:
       spec:
         params:
         - name: git-url
-          value: https://github.com/Rik-IBM-MQ/mq-infra.git
+          value: https://github.com/Rik-IBM-MQ2/mq-infra.git
         pipelineRef:
           name: ibm-mq-promote-dev-stage

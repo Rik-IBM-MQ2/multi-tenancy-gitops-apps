@@ -12,7 +12,7 @@ spec:
       ref: cnkt-trigger-binding
     interceptors:
     - cel:
-        filter: header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-Rik-IBM-MQ' && body.repository.full_name == 'Rik-IBM-MQ/mq-infra'
+        filter: header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-Rik-IBM-MQ' && body.repository.full_name == 'Rik-IBM-MQ2/mq-infra'
     name: mq-infra-dev
     template:
       ref: mq-infra-dev
@@ -21,7 +21,7 @@ spec:
       ref: cnkt-trigger-binding
     interceptors:
     - cel:
-        filter: header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-Rik-IBM-MQ' && body.repository.full_name == 'Rik-IBM-MQ/mq-spring-app'
+        filter: header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/mq-spring-Rik-IBM-MQ' && body.repository.full_name == 'Rik-IBM-MQ2/mq-spring-app'
     name: mq-spring-app-dev
     template:
       ref: mq-spring-app-dev
