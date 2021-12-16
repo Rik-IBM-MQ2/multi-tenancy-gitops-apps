@@ -2,19 +2,3 @@ dependencies:
   - name: mq-spring-app
     version: 0.0.18
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/ci
-  - post-sync-job:
-    name: mq-spring-app-dev-to-stage-postsync-trigger
-    argocdhook: PostSync
-    serviceaccount: pipeline
-    container:
-      image: "registry.access.redhat.com/ubi8"
-      imagePullPolicy: "Always"
-      command: "curl"
-      args:
-        - "-X"
-        - "POST"
-        - "-H"
-        - "Content-Type: application/json"
-        - "--data"
-        - "{}"
-        - "http://mq-spring-app-post-dev-ci.itzroks-661002q71v-tkv3jb-4b4a324f027aea19c5cbc0c3275c4656-0000.us-east.containers.appdomain.cloud"
