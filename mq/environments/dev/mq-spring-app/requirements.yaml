@@ -3,7 +3,7 @@ dependencies:
     version: 0.0.18
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/ci
   - post-sync-job:
-    name: mq-infra-dev-to-stage-postsync-trigger
+    name: mq-spring-app-dev-to-stage-postsync-trigger
     argocdhook: PostSync
     serviceaccount: pipeline
     container:
@@ -18,4 +18,3 @@ dependencies:
         - "--data"
         - "{}"
         - "http://mq-spring-app-post-dev-ci.itzroks-661002q71v-tkv3jb-4b4a324f027aea19c5cbc0c3275c4656-0000.us-east.containers.appdomain.cloud"
-        
