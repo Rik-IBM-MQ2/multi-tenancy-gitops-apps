@@ -1,7 +1,4 @@
 dependencies:
   - name: mq-infra
-    version: 0.0.1
+    version: 0.0.2
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/ci
-  - name: post-sync-job
-    version: 0.1.0
-    repository: https://cloud-native-toolkit.github.io/prod-ref-guide-charts/
