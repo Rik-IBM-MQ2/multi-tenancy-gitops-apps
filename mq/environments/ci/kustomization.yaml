@@ -45,3 +45,4 @@ resources:
 - eventlisteners/mq-spring-app-stage-eventlistener.yaml
 - routes/mq-spring-app-dev-route.yaml
 - routes/mq-spring-app-stage-route.yaml
+- triggertemplates/mq-spring-app-dev-triggertemplate.yaml
