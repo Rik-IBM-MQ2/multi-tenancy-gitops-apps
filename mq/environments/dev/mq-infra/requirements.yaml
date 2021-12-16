@@ -2,6 +2,20 @@ dependencies:
   - name: mq-infra
     version: 0.0.2
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/ci
-  - name: post-sync-job
-    version: 0.1.0
-    repository: https://cloud-native-toolkit.github.io/prod-ref-guide-charts/
+  - post-sync-job:
+    name: mq-infra-dev-to-stage-postsync-trigger
+    argocdhook: PostSync
+    serviceaccount: pipeline
+    container:
+      image: "registry.access.redhat.com/ubi8"
+      imagePullPolicy: "Always"
+      command: "curl"
+      args:
+        - "-X"
+        - "POST"
+        - "-H"
+        - "Content-Type: application/json"
+        - "--data"
+        - "{}"
+        - "http://mq-infra-post-dev-ci.itzroks-661002q71v-tkv3jb-4b4a324f027aea19c5cbc0c3275c4656-0000.us-east.containers.appdomain.cloud"
+        
